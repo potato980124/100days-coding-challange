@@ -1,0 +1,54 @@
+/* 리셋 css , 공통 */
+a {
+  text-decoration: none;
+}
+
+ul,h1,h2,button {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+}
+button, input[type="button"], input[type="submit"] {
+    all: unset; 
+}
+
+/* 헤더  */
+header {
+  width: 100%;
+  position: fixed;
+  box-sizing: border-box;
+  background-color: rgb(0, 0, 0, 0%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+}
+
+#logo > a {
+  display: block;
+  font-family: "Oleo Script", sans-serif;
+  font-size: 50px;
+  color: rgb(245, 243, 160);
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
+nav {
+  
+}
+.nav-list-box {
+  display: flex; 
+}
+.nav-list-box > li {
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: yellow;
+}
+
+
+

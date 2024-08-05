@@ -35,3 +35,40 @@
   cursor: pointer;
   font-size: 14px;
 }
+
+/* 하이라이트 섹션 */
+
+#semi {
+  background: linear-gradient(0deg, rgb(227, 255, 254), rgb(0, 0, 0));
+  padding: 1px;
+}
+#semi > h1 {
+  text-align: center;
+  font-size: 30px;
+  margin: 20px 0;
+}
+
+#hilight-box {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+#hilight-box li {
+  flex: 1;
+  margin: 0 20px;
+}
+#hilight-box img {
+  height: 200px;
+  width: 100%;
+  box-shadow: 2px 4px 8px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+#hilight-box h2 {
+  margin: 20px 0;
+  text-align: center;
+}

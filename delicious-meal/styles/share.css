@@ -1,0 +1,145 @@
+body{
+    font-family: 'Open Sans',sans-serif;
+    margin: 0;
+    background-color:  rgb(44, 41, 38);
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+h2{
+    margin: 0;
+}
+#main-header{
+    display: flex;
+    height: 5rem;
+    justify-content: space-between;
+    padding: 0 5%;
+    background-color: rgb(29, 26, 24);
+    align-items: center;
+}
+#main-header nav > ul{
+    display: flex;
+}
+
+#main-header nav li{
+    margin-left: 1rem;
+}
+/* 모바일 메뉴 */
+#side-drawer{
+    /* position: fixed;
+    top: 0;
+    left: 0; */
+    width: 100%;
+    height: 100%;
+    background-color: rgb(29, 26, 27);
+}
+#side-drawer ul{
+    padding: 4rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:  rgb(238, 164, 80);
+    text-transform: uppercase;
+}
+/* 햄버거 버튼 */
+.menu-btn{
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 3rem;
+    height: 3rem;    
+}
+.menu-btn span{
+    width: 100%;
+    height: 3px;
+    background-color: white;
+}
+
+#main-header nav a{
+    color: rgb(185, 131, 131);
+    font-size: 1.25rem;
+    text-transform: uppercase;
+
+}
+
+#main-header nav a:hover{
+    color: rgb(228, 163, 44);
+}
+
+main h1{
+    text-align: center;
+    color: rgb(228, 163, 44) ;
+    font-size: 3rem;
+}
+
+#latest-products{
+ width: 80%;
+ margin: 2rem auto;
+}
+#latest-products ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+#latest-products img{
+    height: 15rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.food-items{
+    background-color: rgb(228, 206, 182);
+    border-radius: 6px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.food-item-contents{
+    display: block;
+    padding: 1rem;
+}
+
+.btn{
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    border-radius: 6px;
+    background-color: rgb(228, 157, 44);
+    color: white;
+    margin: 1.5rem 0;
+}
+
+
+
+
+@media (max-width: 48rem) {
+    #latest-products ul{
+        grid-template-columns: 1fr;
+    }
+    #logo{
+        font-size: 1rem;
+    }
+    main h1{
+        font-size: 1.5rem;
+    }
+    #main-header nav{
+        display: none;
+    }
+    .menu-btn{
+        display: flex;
+    }
+}
